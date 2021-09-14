@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Compound Protocol Interface</title>
+</head>
+<body>
+
+  <h1>Supply or Borrow</h1>
+
+  <button class="enable-button" id="enable-button">Enable Ethereum</button>
+
+  <div class="asset-interface">
+    <table>
+      <tr>
+        <th>Supply</th>
+        <th>Borrow</th>
+      </tr>
+
+      <!-- USDC -->
+      <tr>
+        <td>
+          USDC Supply
+          <input type="text" id="usdc-supply-input" />
+          <button id="usdc-supply-button">Supply</button>
+          <input type="checkbox" id="usdc-collateral-checkbox">
+        </td>
+        <td>
+          USDC Borrow
+          <input type="text" id="usdc-borrow-input" />
+          <button id="usdc-borrow-button">Borrow</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          USDC Supplied
+          <span id="usdc-supplied">0</span>
+        </td>
+        <td>
+          USDC Borrowed
+          <span id="usdc-borrowed">0</span>
+          <br>
+          USDC Borrow Limit
+          <span id="usdc-borrowable">0</span>
+        </td>
+      </tr>
+
+      <!-- ETH -->
+      <tr>
+        <td>
+          ETH Supply
+          <input type="text" id="eth-supply-input" />
+          <button id="eth-supply-button">Supply</button>
+          <input type="checkbox" id="eth-collateral-checkbox">
+        </td>
+        <td>
+          ETH Borrow
+          <input type="text" id="eth-borrow-input" />
+          <button id="eth-borrow-button">Borrow</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ETH Supplied
+          <span id="eth-supplied">0</span>
+        </td>
+        <td>
+          ETH Borrowed
+          <span id="eth-borrowed">0</span>
+          <br>
+          ETH Borrow Limit
+          <span id="eth-borrowable">0</span>
+        </td>
+      </tr>
+
+      <!-- UNI -->
+      <tr>
+        <td>
+          UNI Supply
+          <input type="text" id="uni-supply-input" />
+          <button id="uni-supply-button">Supply</button>
+          <input type="checkbox" id="uni-collateral-checkbox">
+        </td>
+        <td>
+          UNI Borrow
+          <input type="text" id="uni-borrow-input" />
+          <button id="uni-borrow-button">Borrow</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          UNI Supplied
+          <span id="uni-supplied">0</span>
+        </td>
+        <td>
+          UNI Borrowed
+          <span id="uni-borrowed">0</span>
+          <br>
+          UNI Borrow Limit
+          <span id="uni-borrowable">0</span>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@compound-finance/compound-js@0.3.0/dist/browser/compound.min.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+
+</html>
