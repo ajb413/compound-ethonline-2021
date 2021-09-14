@@ -8,7 +8,7 @@ If you do not have a JSON RPC provider URL, head over to [alchemy.com](alchemy.c
 
 To run the web app locally, set these 2 environment variables and run the 2 commands:
 ```bash
-## set these environment variables
+## configure these environment variables WITH YOUR OWN DEV SETTINGS!
 export MAINNET_PROVIDER_URL="https://eth-mainnet.alchemyapi.io/v2/__KEY_HERE__"
 export DEV_ETH_MNEMONIC="clutch captain shoe...."
 
