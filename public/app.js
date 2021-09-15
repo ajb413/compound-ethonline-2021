@@ -267,6 +267,5 @@ async function main() {
   setUpBorrowInterface(assets, elements);
 
   const assetsIn = await getAssetsIn(account);
-  console.log(assetsIn);
   setUpCollateralInterface(assets, assetsIn, elements);
 }

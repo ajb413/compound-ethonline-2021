@@ -23,7 +23,7 @@ const web3 = new Web3(hre.network.provider);
   const webApp = express();
   webApp.use('/', express.static(path.join(__dirname, 'public')));
   webApp.listen(8080, () => {
-    console.log(`Example app listening at http://localhost:8080...\n`)
+    console.log(`Example app listening at http://localhost:8080\n`)
   });
 
   // Seed first account with ERC-20 tokens on localhost
